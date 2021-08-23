@@ -23,7 +23,8 @@ class CursosController extends Controller
      */
     public function create()
     {
-        //
+        $action = route('admin.cursos.store');
+        return view('admin.cursos.form', compact('action'));
     }
 
     /**

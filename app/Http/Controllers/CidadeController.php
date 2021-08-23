@@ -11,7 +11,6 @@ class CidadeController extends Controller
     {
         $subtitulo  = 'Lista de cursos';
 
-
         $cidades = Cidade::all();
 
         return view('admin.cidades.index', compact('subtitulo', 'cidades'));
